@@ -1,0 +1,17 @@
+* → universal (all elements)
+
+#id → single unique element
+
+.class → group of elements with same class
+
+, → group multiple selectors
+
+parent child → descendants inside parent
+
+parent > child → only direct children
+
+[attr=value] → based on attribute values
+
+:hover → state-based styling (interaction)
+
+::first-letter → styles part of an element’s content
