@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clear Property Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .container {
+      border: 2px dashed gray;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    .float-left {
+      float: left;
+      width: 120px;
+      height: 80px;
+      background: lightblue;
+      border: 2px solid navy;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    .float-right {
+      float: right;
+      width: 120px;
+      height: 80px;
+      background: lightcoral;
+      border: 2px solid darkred;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    .cleared {
+      background: lightgreen;
+      border: 2px solid green;
+      padding: 10px;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    .clear-left {
+      clear: left;
+    }
+
+    .clear-right {
+      clear: right;
+    }
+
+    .clear-both {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h2>Clear: none (default)</h2>
+  <div class="container">
+    <div class="float-left">Float Left</div>
+    <p class="cleared">This element does not use clear, so it flows beside the float.</p>
+  </div>
+
+  <h2>Clear: left</h2>
+  <div class="container">
+    <div class="float-left">Float Left</div>
+    <p class="cleared clear-left">This element has clear:left, so it moves below the left-floated box.</p>
+  </div>
+
+  <h2>Clear: right</h2>
+  <div class="container">
+    <div class="float-right">Float Right</div>
+    <p class="cleared clear-right">This element has clear:right, so it moves below the right-floated box.</p>
+  </div>
+
+  <h2>Clear: both</h2>
+  <div class="container">
+    <div class="float-left">Float Left</div>
+    <div class="float-right">Float Right</div>
+    <p class="cleared clear-both">This element has clear:both, so it moves below both floated boxes.</p>
+  </div>
+</body>
+</html>

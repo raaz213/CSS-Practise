@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow Demo</title>
+    <style>
+      .overflow-container {
+        width: 200px;
+        height: 80px;
+        border: 2px solid #333;
+        margin: 15px 0;
+        padding: 5px;
+        background: lightblue;
+      }
+
+      .visible {
+        overflow: visible;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      .auto {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Overflow Examples</h2>
+
+    <h3>Overflow: visible (default)</h3>
+    <div class="overflow-container visible">
+      This is a long text that exceeds the container width and height. You can
+      see it spilling out because overflow is visible. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div> <br>
+
+    <h3>Overflow: hidden</h3>
+    <div class="overflow-container hidden">
+      This is a long text that exceeds the container width and height. The extra
+      content is clipped and not visible. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </div>
+
+    <h3>Overflow: scroll</h3>
+    <div class="overflow-container scroll">
+      This is a long text that exceeds the container width and height.
+      Scrollbars are always visible. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    </div>
+
+    <h3>Overflow: auto</h3>
+    <div class="overflow-container auto">
+      This is a long text that exceeds the container width and height.
+      Scrollbars appear only if needed. 
+    </div>
+  </body>
+</html>

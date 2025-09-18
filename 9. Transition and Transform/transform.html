@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transform Interactive Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h2 { margin-top: 40px; }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      background: orange;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      font-weight: bold;
+      transition: all 0.5s ease;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* 2D Transforms on hover */
+    .translate:hover { transform: translate(50px, 20px); }
+    .rotate:hover { transform: rotate(45deg); }
+    .scale:hover { transform: scale(1.5); }
+    .skew:hover { transform: skew(20deg, 10deg); }
+
+    /* 3D Transforms on hover (requires perspective) */
+    .perspective-container {
+      perspective: 600px;
+    }
+    .rotate3d:hover { transform: rotateX(45deg) rotateY(30deg); }
+    .translate3d:hover { transform: translate3d(50px, 20px, 50px); }
+    .scale3d:hover { transform: scale3d(1.5, 1.2, 1.5); }
+  </style>
+</head>
+<body>
+  <h2>CSS 2D Transform Examples (Hover to see effect)</h2>
+  <div class="container">
+    <div class="box translate">Translate</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box scale">Scale</div>
+    <div class="box skew">Skew</div>
+  </div>
+
+  <h2>CSS 3D Transform Examples (Hover to see effect)</h2>
+  <div class="container perspective-container">
+    <div class="box rotate3d">Rotate3D</div>
+    <div class="box translate3d">Translate3D</div>
+    <div class="box scale3d">Scale3D</div>
+  </div>
+
+  <p>Hover over each box to see smooth 2D and 3D transform effects using <b>transition</b>.</p>
+</body>
+</html>

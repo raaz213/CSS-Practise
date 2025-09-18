@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Example</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+      grid-template-rows: 100px 100px;   /* 2 rows */
+      gap: 10px; /* space between grid items */
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    .grid-item {
+      background: lightblue;
+      border: 2px solid darkblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Grid Example</h2>
+  <p>Grid with <code>3 columns × 2 rows</code> and <code>gap: 10px</code></p>
+
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+</body>
+</html>

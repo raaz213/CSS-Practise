@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float Property Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .container {
+      border: 2px dashed gray;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    .box {
+      width: 120px;
+      height: 80px;
+      background: lightblue;
+      border: 2px solid navy;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    /* Float variations */
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .none {
+      float: none;
+    }
+
+    .initial {
+      float: initial; /* resets to default (none) */
+    }
+
+    .inherit {
+      float: inherit; /* takes float value from parent */
+    }
+
+    /* Parent with float */
+    .parent-float {
+      float: right;
+      border: 2px solid red;
+      padding: 15px;
+      margin: 20px;
+      width: 300px;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both; /* clears floats to prevent overlap */
+    }
+  </style>
+</head>
+<body>
+  <h2>Float: none (default)</h2>
+  <div class="container clearfix">
+    <div class="box none">None</div>
+    <p>Text flows normally. The box is not floating, so it stays above this text in the document flow.</p>
+  </div>
+
+  <h2>Float: left</h2>
+  <div class="container clearfix">
+    <div class="box left">Left</div>
+    <p>This text wraps around the blue box, which is floated to the left side of the container. Notice how text flows on the right.</p>
+  </div>
+
+  <h2>Float: right</h2>
+  <div class="container clearfix">
+    <div class="box right">Right</div>
+    <p>This text wraps around the blue box, which is floated to the right side of the container. Notice how text flows on the left.</p>
+  </div>
+
+  <h2>Float: initial</h2>
+  <div class="container clearfix">
+    <div class="box initial">Initial</div>
+    <p>`float: initial` resets the value back to the default, which is `none`. So this behaves just like float: none.</p>
+  </div>
+
+  <h2>Float: inherit</h2>
+  <div class="parent-float clearfix">
+    <div class="box inherit">Inherit</div>
+    <p>This box inherits float from its parent. Since the parent is floated <b>right</b>, the child also floats right.</p>
+  </div>
+</body>
+</html>

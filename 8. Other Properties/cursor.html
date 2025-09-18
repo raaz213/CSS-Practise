@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cursor Demo</title>
+  <style>
+    .cursor-box {
+      width: 200px;
+      height: 50px;
+      margin: 15px 0;
+      padding: 10px;
+      border: 2px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      background: lightblue;
+    }
+
+    .default { cursor: default; }
+    .pointer { cursor: pointer; }
+    .text { cursor: text; }
+    .move { cursor: move; }
+    .not-allowed { cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <h2>CSS Cursor Types</h2>
+
+  <div class="cursor-box default">Default (Arrow)</div>
+  <div class="cursor-box pointer">Pointer (Hand)</div>
+  <div class="cursor-box text">Text (I-beam)</div>
+  <div class="cursor-box move">Move (Four Arrows)</div>
+  <div class="cursor-box not-allowed">Not Allowed (🚫)</div>
+
+  <p>Hover over each box to see the cursor change.</p>
+</body>
+</html>

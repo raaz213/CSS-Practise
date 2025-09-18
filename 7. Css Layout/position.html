@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      height: 2000px; /* to allow scrolling */
+    }
+
+    .demo-box {
+      width: 150px;
+      height: 80px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+
+    /* 1. Static */
+    .static {
+      position: static;
+      background: gray;
+    }
+
+    /* 2. Relative */
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 40px;
+      background: blue;
+    }
+
+    /* 3. Absolute (inside parent) */
+    .absolute-parent {
+      position: relative; /* important: ancestor */
+      width: 300px;
+      height: 200px;
+      border: 2px dashed black;
+      margin: 30px 0;
+      background: #f0f0f0;
+    }
+    .absolute {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: green;
+    }
+
+    /* 4. Fixed */
+    .fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: red;
+    }
+
+    /* 5. Sticky */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Position Property Demo</h1>
+
+  <h2>1. Static (default)</h2>
+  <div class="demo-box static">Static</div>
+
+  <h2>2. Relative</h2>
+  <div class="demo-box relative">Relative</div>
+
+  <h2>3. Absolute (inside relative parent)</h2>
+  <div class="absolute-parent">
+    <div class="demo-box absolute">Absolute</div>
+  </div>
+
+  <h2>4. Fixed (stays on screen when scrolling)</h2>
+  <div class="demo-box fixed">Fixed</div>
+
+  <h2>5. Sticky (sticks to top when scrolling)</h2>
+  <div class="demo-box sticky">Sticky</div>
+  <p>Scroll down to see sticky in action.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo, velit vel porta ullamcorper, 
+  lorem sem sodales ex, a faucibus libero arcu et sapien. Keep scrolling to watch how sticky works.</p>
+  <p>Keep scrolling... (Sticky element should follow the top until its parent ends).</p>
+</body>
+</html>
