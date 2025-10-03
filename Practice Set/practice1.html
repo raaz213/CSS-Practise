@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid red;
+        }
+        
+        header {
+            border-bottom: 2px solid red;
+            text-align: center;
+            padding: 20px;
+        }
+         
+        main {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        main div {
+            border-right: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .third {
+            border-right: none;
+        }
+        
+        .first {
+            border-left: none;
+        }
+        
+        footer {
+            border-top: 2px solid red;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <header>
+            <p>WEBSITE NAME</p>
+        </header>
+        <main>
+            <div class="first">
+                <p>MENU</p>
+            </div>
+            <div class="second">
+                <p>You Can write your main content here</p>
+            </div>
+            <div class="third">
+                <p>ADVT</p>
+            </div>
+        </main>
+        <footer>
+            <p>FOOTER</p>
+        </footer>
+   </div>
+</body>
+</html>
