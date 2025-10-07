@@ -1,0 +1,53 @@
+/* Combined CSS for Colors and Background */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Colors Example */
+    .color-section {
+      padding: 20px;
+    }
+    .named-color {
+      color: red;
+    }
+    .hex-color {
+      color: #008080; /* teal */
+    }
+    .rgb-color {
+      color: rgb(0, 128, 255); /* blue */
+    }
+    .rgba-color {
+      color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+    }
+    .hsl-color {
+      color: hsl(120, 100%, 25%); /* dark green */
+    }
+
+    /* Background Example */
+    .background-section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: lightgray;
+    }
+    .bg-image {
+      height: 200px;
+      background-image: url("https://picsum.photos/600/400");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
+    .bg-repeat {
+      height: 150px;
+      background-image: url("https://picsum.photos/100/100");
+      background-repeat: repeat;
+    }
+    .bg-fixed {
+      height: 200px;
+      background-image: url("https://picsum.photos/800/600");
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  

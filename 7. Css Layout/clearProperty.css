@@ -1,0 +1,56 @@
+/* Clear Property Example */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    .container {
+      border: 2px dashed gray;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    .float-left {
+      float: left;
+      width: 120px;
+      height: 80px;
+      background: lightblue;
+      border: 2px solid navy;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    .float-right {
+      float: right;
+      width: 120px;
+      height: 80px;
+      background: lightcoral;
+      border: 2px solid darkred;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    .cleared {
+      background: lightgreen;
+      border: 2px solid green;
+      padding: 10px;
+      margin: 10px;
+      font-weight: bold;
+    }
+
+    .clear-left {
+      clear: left;
+    }
+
+    .clear-right {
+      clear: right;
+    }
+
+    .clear-both {
+      clear: both;
+    }
+  

@@ -1,0 +1,42 @@
+
+      .container {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      header {
+        background-color: rgb(210, 218, 225);
+        text-align: center;
+      }
+      nav {
+        background-color: rgb(210, 218, 225);
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .feature {
+        background-color: rgb(210, 218, 225);
+        text-align: center;
+        padding-bottom: 80px;
+        margin: 10px 0px;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex: 1;
+        gap: 20px;
+      }
+      .col1 ,.col2 ,.col3{
+        background-color: rgb(210, 218, 225);
+        text-align: center;
+        padding-top: 10px;
+      }
+      footer {
+        background-color: rgb(210, 218, 225);
+        padding: 30px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    

@@ -1,0 +1,48 @@
+/* CSS for Text Styling Examples */
+      .p1 {
+        font-size: 32px;
+      }
+      .p2 {
+        font-family: Verdana, sans-serif;
+      }
+      .p3 {
+        font-family: Arial, sans-serif;
+      }
+      .p4 {
+        font-weight: bold;
+      }
+      .p5 {
+        text-align: center;
+      }
+      .p6 {
+        text-align: justify;
+      }
+      .p7 {
+        text-decoration: underline;
+      }
+      .p8 {
+        text-decoration: line-through;
+      }
+      .p9 {
+        line-height: 1.5;
+      }
+      .p10 {
+        line-height: 1.8;
+      }
+      .p11 {
+        letter-spacing: 3px;
+      }
+      .p12 {
+        text-transform: uppercase;
+      }
+      .p13 {
+        text-transform: lowercase;
+      }
+      .p14 {
+        letter-spacing: 3px; /* space between letters */
+        word-spacing: 10px; /* space between words */
+      }
+      .p15 {
+        text-shadow: 2px 2px 5px gray; /* x-offset y-offset blur color */
+      }
+    

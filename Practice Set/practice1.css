@@ -1,0 +1,43 @@
+
+        .container {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid red;
+        }
+        
+        header {
+            border-bottom: 2px solid red;
+            text-align: center;
+            padding: 20px;
+        }
+         
+        main {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        main div {
+            border-right: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .third {
+            border-right: none;
+        }
+        
+        .first {
+            border-left: none;
+        }
+        
+        footer {
+            border-top: 2px solid red;
+            text-align: center;
+            padding: 20px;
+        }
+    

@@ -3,65 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Float Property Demo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-    }
-
-    .container {
-      border: 2px dashed gray;
-      padding: 15px;
-      margin: 20px 0;
-    }
-
-    .box {
-      width: 120px;
-      height: 80px;
-      background: lightblue;
-      border: 2px solid navy;
-      margin: 10px;
-      text-align: center;
-      line-height: 80px;
-      font-weight: bold;
-    }
-
-    /* Float variations */
-    .left {
-      float: left;
-    }
-
-    .right {
-      float: right;
-    }
-
-    .none {
-      float: none;
-    }
-
-    .initial {
-      float: initial; /* resets to default (none) */
-    }
-
-    .inherit {
-      float: inherit; /* takes float value from parent */
-    }
-
-    /* Parent with float */
-    .parent-float {
-      float: right;
-      border: 2px solid red;
-      padding: 15px;
-      margin: 20px;
-      width: 300px;
-    }
-
-    .clearfix::after {
-      content: "";
-      display: block;
-      clear: both; /* clears floats to prevent overlap */
-    }
-  </style>
+ <link rel="stylesheet" href="floatProperty.css">
 </head>
 <body>
   <h2>Float: none (default)</h2>
